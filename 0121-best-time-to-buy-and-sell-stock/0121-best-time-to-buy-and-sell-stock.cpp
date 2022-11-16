@@ -5,7 +5,7 @@ public:
         int ans = 0;
         for(int i=1;i<prices.size();i++)
         {
-            if(prices[i]<prices[buy]&&ans>=prices[sell]-prices[buy])
+            if(prices[i]<prices[buy])
             {
                 buy =i;
                 sell = i;
