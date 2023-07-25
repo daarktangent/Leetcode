@@ -26,7 +26,6 @@ class Solution {
             return;
         }
         List<String> last= map.get(digits.charAt(currPos));
-        System.out.println(last);
         for(int i=0;i<last.size();i++)
         {
             temp.append(last.get(i));
