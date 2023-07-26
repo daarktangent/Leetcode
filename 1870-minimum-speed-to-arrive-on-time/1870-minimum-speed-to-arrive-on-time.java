@@ -10,7 +10,6 @@ class Solution {
         while(left<right)
         {
             mid = left+(right-left)/2;
-            System.out.println(left+" "+ mid+ " "+right);
             
             if(check(dist,hour,mid))
             {
@@ -31,9 +30,7 @@ class Solution {
         {
             total +=Math.ceil(dist[i]*1.0/mid);
         }
-        System.out.println(total+" "+(dist[i]*1.0)/mid+" print");
         total+=(dist[i]*1.0)/mid;
-        System.out.println(total);
         if(total<=hour)
         {
             return true;
