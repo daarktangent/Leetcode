@@ -4,9 +4,9 @@ class Solution {
         arr[index1] = arr[index2];
         arr[index2] = temp;
     }
-    public void travel(int[] nums,List<List<Integer>> ans,int start)
+    public void travel(int[] nums,List<List<Integer>> ans,int n)
     {
-        if(start==nums.length)
+        if(n==nums.length)
         {
            List<Integer> combination = new ArrayList<>();
             for (int num : nums) {
@@ -15,11 +15,11 @@ class Solution {
             ans.add(combination);
             return;
         }
-        for(int i=start;i<nums.length;i++)
+        for(int i=n;i<nums.length;i++)
         {
-            swapIntegers(nums,i,start);
-            travel(nums,ans,start+1);
-            swapIntegers(nums,i,start);
+            swapIntegers(nums,i,n);
+            travel(nums,ans,n+1);
+            swapIntegers(nums,i,n);
         }
         
     }
