@@ -38,7 +38,7 @@ class Solution {
                  //System.out.println(i+"else"+count);
             }
         }
-         System.out.println(freq);
+         //System.out.println(freq);
         return count;
     }
 }
