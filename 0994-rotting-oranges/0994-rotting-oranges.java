@@ -26,7 +26,7 @@ class Solution {
                 int y = temp.get(1);
                 if(visited[x][y]==0)
                 {
-                    System.out.println(x+"  "+ y);
+                    
                     visited[x][y]=1;
                     if(x+1<grid.length&&(grid[x+1][y]==1)&&visited[x+1][y]==0)
                     {
