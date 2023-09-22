@@ -27,7 +27,6 @@ class Solution {
     public List<List<Integer>> permute(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer> > ans = new ArrayList<>();
-        System.out.println(Arrays.toString(nums));
         travel(nums,ans,0);
         return ans;
     }
