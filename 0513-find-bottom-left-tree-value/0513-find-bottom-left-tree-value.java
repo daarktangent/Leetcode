@@ -43,7 +43,7 @@ class Solution {
                 size--;
                 //System.out.println("asdas"+size+ q);
             }
-             System.out.println("out");
+             //System.out.println("out");
         }  
         return min;
     }
