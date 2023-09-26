@@ -18,25 +18,13 @@ class Solution {
             }
             else if (!st.contains(currchar))
             {
-                if(st.peek()<currchar&&!st.contains(currchar))
-                {
-                    st.push(currchar);
-                    
-                }
-                else
-                {
                     while(st.size()>0&&st.peek()>currchar&&frequency[st.peek()-'a']>0)
                     {
                         st.pop();
                     }
-                    if(!st.contains(currchar))
-                    {
-                
-                        st.push(currchar);
-                    }
-                    
-                }
+                     st.push(currchar);
             }
+            
             frequency[currchar-'a']-=1;
         }
         while(!st.isEmpty())
