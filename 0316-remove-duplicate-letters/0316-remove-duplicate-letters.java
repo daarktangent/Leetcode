@@ -16,7 +16,8 @@ class Solution {
                 st.push(currchar);
 
             }
-            else{
+            else if (!st.contains(currchar))
+            {
                 if(st.peek()<currchar&&!st.contains(currchar))
                 {
                     st.push(currchar);
@@ -24,7 +25,7 @@ class Solution {
                 }
                 else
                 {
-                    while(st.size()>0&&st.peek()>currchar&&frequency[st.peek()-'a']>0&&!st.contains(currchar))
+                    while(st.size()>0&&st.peek()>currchar&&frequency[st.peek()-'a']>0)
                     {
                         st.pop();
                     }
