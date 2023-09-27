@@ -15,7 +15,6 @@ class Solution {
         }
         for(int i=s.length()-1;i>=0;i--)
         {
-            System.out.println(k%total+" "+ k+" "+total);
             k%=total;
             if(k==0&&Character.isDigit(s.charAt(i))==false)
             {
@@ -30,7 +29,6 @@ class Solution {
                 total--;
             }
         }
-        System.out.println(total);
         return " ";
     }
 }
