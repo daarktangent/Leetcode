@@ -53,7 +53,7 @@ class Solution {
                 }
                 map.get(temp.pos).add(temp.node.val);
                 size--;
-                System.out.println(map+" "+"map");
+               // System.out.println(map+" "+"map");
             }
             map.forEach((key,value)->
                         {
