@@ -5,19 +5,19 @@ class Solution {
         {
             set.add(x);
         }
-        System.out.println(set);
+        //System.out.println(set);
         int count=1;
         int ans=0;
         for(int x:set)
         {
             if(set.contains(x+1))
             {
-                System.out.println(x+"asdas"+count);
+                //System.out.println(x+"asdas"+count);
                 count++;
             }
             else
             {
-                System.out.println(count);
+               // System.out.println(count);
                 ans = Math.max(ans,count);
                 count=1;
             }
