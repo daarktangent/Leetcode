@@ -11,7 +11,7 @@ class Solution {
         {
             if(isOper(x))
             {
-                System.out.println("h "+x);
+                //System.out.println("h "+x);
                 int op1 = sta.pop();
                 int op2 = sta.pop();
                 if(x.equals("+"))
